@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GIPHY API</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input,
+    .gif {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+    <form id="button-form">
+      <label for="show-input">Select a TV show</label>
+      <input type="text" id="show-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-show" type="submit" value="Select a show">
+    </form>
+
+
+  <div class="container">
+    <h1>TV GIFs!!!</h1>
+    <div id="tvButton"></div>
+    <!-- Rendered buttons will get dumped here  -->
+       <!-- Movies will get dumped Here -->
+    <div id="button-view"></div>
+    <div id="tv-view"><br></div>
+
+
+ 
+  </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="./assets/javascript/giphy.js"></script>
+
+</body>
+
+</html>
