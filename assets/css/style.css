@@ -2,4 +2,27 @@
 	margin: 10px;
 	width: 200px;
 	height: 200px;
+	border: gray solid 1px;
 }
+body {
+	background-image: url("http://cdn.wallpapersafari.com/99/19/OeHrJR.jpg")
+
+}
+button {
+	color: #fff;
+	background-color: #00aba0;
+}
+
+#add-show{
+	color: #fff;
+	background-color: #00aba0;
+}
+
+#button-form {
+	color: #fff;
+}
+
+h1 {
+	color: #fff;
+}
+
