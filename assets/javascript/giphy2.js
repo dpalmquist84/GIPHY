@@ -10,7 +10,7 @@
       function displayTVInfo() {
 
         var show = $(this).attr("data-name");
-        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=20292832777648e5ab676d907f7b7d29&q=" + show + "&limit=10&offset=0&rating=G&lang=en";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=20292832777648e5ab676d907f7b7d29&q=" + show + "&limit=25&offset=0&rating=G&lang=en";
 
 
         // Creates AJAX call for the specific movie button being clicked
@@ -38,7 +38,6 @@
             pTwo.attr("data-still", response.data[i].images.fixed_height_still.url);
            
            $("#tv-view").prepend(pOne, pTwo);
-           $(".gif").prepend(pOne);
 
            
           
@@ -116,7 +115,7 @@
       console.log(this);
       var animateGif = $(this).attr("data-animate");
      console.log(animateGif)
-     // $(".gif").prepend(pOne);
+     $(".gif").prepend(pOne);
   
       // If the clicked image's state is still, update its src attribute to what its data-animate value is.
       // Then, set the image's data-state to animate
