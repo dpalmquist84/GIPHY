@@ -10,7 +10,7 @@
       function displayTVInfo() {
 
         var show = $(this).attr("data-name");
-        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=20292832777648e5ab676d907f7b7d29&q=" + show + "&limit=10&offset=0&rating=G&lang=en";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=20292832777648e5ab676d907f7b7d29&q=" + show + "&limit=10&offset=0&lang=en";
 
 
         // Creates AJAX call for the specific movie button being clicked
@@ -83,6 +83,7 @@
         event.preventDefault();
         // This line of code will grab the input from the textbox
         var show = $("#show-input").val().trim();
+
        $('#tv-view').empty();
        $("#show-input").val("");
 
@@ -127,9 +128,16 @@
         console.log(this);
      
        
-      } else {
+      } 
+      else if (state === "animate") {
         $(this).attr("src", gif);
         $(this).attr("data-state", "still");
+        console.log(this);
+      }
+
+      else {
+        $(this).attr("src", animateGif);
+        $(this).attr("data-state", "animate");
         console.log(this);
         
  

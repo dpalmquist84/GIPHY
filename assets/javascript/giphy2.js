@@ -34,15 +34,28 @@
            gif = response.data[i].images.fixed_height_still.url;
            var pTwo = $("<img src='" + gif + "'>").append().addClass('gif');
            
-            pTwo.attr("data-animate", response.data[i].images.fixed_height.url);
-            pTwo.attr("data-still", response.data[i].images.fixed_height_still.url);
+           pTwo.attr("data-animate", response.data[i].images.fixed_height.url);
+           pTwo.attr("data-still", response.data[i].images.fixed_height_still.url);
            
-           $("#tv-view").prepend(pOne, pTwo);
-
+           // $("#tv-view").prepend(pOne, pTwo);
+           tv.prepend(pOne);
+           tv.prepend(pTwo);
            
           
       
         }
+
+          // for (var i = 0; i < 10; i++) {
+          // var gifDiv = $("<div class='item'>");
+          // var rating = response.data[i].rating;
+          // var gifP = $('<p class="rating-info">');
+          // var gifImage = $('<img class="gif-image">');
+          // gifImage.attr("src",response.data[i].images.fixed_height_still.url);               
+          // gifP.text('Rated: ' + rating);
+          // gifDiv.append(gifP);
+          // gifDiv.append(gifImage);
+          // $("#gif-display").append(gifDiv);
+          //   }
         
 
         });

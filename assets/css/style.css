@@ -11,18 +11,29 @@ body {
 button {
 	color: #fff;
 	background-color: #00aba0;
+	font-size: 16px;
+	border-radius: 25px;
 }
 
 #add-show{
 	color: #fff;
 	background-color: #00aba0;
+	font-size: 16px;
+
 }
 
 #button-form {
 	color: #fff;
+	font-size: 16px;
 }
 
 h1 {
 	color: #fff;
+}
+
+#tv-view {
+	color: #039be5;
+	font-weight: bold;
+	font-size: 16px;
 }
 
