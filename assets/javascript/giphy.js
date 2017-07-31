@@ -80,7 +80,7 @@
 
       // This function handles events where the add show button is clicked
       $("#add-show").on("click", function(event) {
-        event.preventDefault();
+        e.preventDefault();
         // This line of code will grab the input from the textbox
         var show = $("#show-input").val().trim();
 
