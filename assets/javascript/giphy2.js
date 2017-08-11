@@ -18,6 +18,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
+          console.log(response)
 
             
    
@@ -29,6 +30,7 @@
            var tv = $("<div class= tvShows>")
            var rating = response.data[i].rating;
            var pOne = ("Rating: " + rating);
+           console.log(response)
            
            animateGif = response.data[i].images.fixed_height.url;
            gif = response.data[i].images.fixed_height_still.url;
@@ -40,6 +42,7 @@
            // $("#tv-view").prepend(pOne, pTwo);
            tv.prepend(pOne);
            tv.prepend(pTwo);
+           console.log(pTwo);
            
           
       
